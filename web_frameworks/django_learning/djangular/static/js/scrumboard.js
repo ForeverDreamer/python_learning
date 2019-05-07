@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('scrumboard.demo', [])
+    angular.module('scrumboard.demo', ['ngRoute'])
         .controller('ScrumboardController', ['$scope', '$http', ScrumboardController]);
 
     function ScrumboardController($scope, $http) {
@@ -18,11 +18,6 @@
                     alert('Could not create card');
                 }
             );
-        };
-
-        $scope.login = function() {
-            $http.post('/auth_api/login/',
-                {username: 'micro', password: '123456'});
         };
 
         $scope.data = [];
