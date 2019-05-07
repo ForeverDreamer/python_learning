@@ -62,3 +62,7 @@ ul {
     resize: vertical;
 }
 
+.logout,
+.show-filters {
+    float: right;
+}
