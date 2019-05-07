@@ -20,10 +20,18 @@
             );
         };
 
+        $scope.login = function() {
+            $http.post('/auth_api/login/',
+                {username: 'micro', password: '123456'});
+        };
+
         $scope.data = [];
         $http.get('/scrumboard/lists/').then(
             function (response) {
                 $scope.data = response.data;
+            },
+            function () {
+                alert('Please login fisrt!');
             }
         );
     }
