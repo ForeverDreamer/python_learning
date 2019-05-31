@@ -1,5 +1,5 @@
 import unittest
-from phonebook import Phonebook
+from .phonebook import Phonebook
 
 
 class PhonebookTest(unittest.TestCase):
