@@ -10,3 +10,9 @@ class Phonebook:
 
     def is_consistent(self):
         return True
+
+    def get_names(self):
+        return self.entries.keys()
+
+    def get_numbers(self):
+        return self.entries.values()
