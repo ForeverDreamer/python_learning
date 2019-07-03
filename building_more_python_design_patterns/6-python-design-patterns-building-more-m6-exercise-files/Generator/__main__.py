@@ -1,5 +1,6 @@
 from testdata import employees, departments
 
+
 def main():
     print("Employees:")
     print_summary(employees)

@@ -22,4 +22,4 @@ class KPIs(AbsSubject):
         self._open_tickets = open_tickets
         self._closed_tickets = closed_tickets
         self._new_tickets = new_tickets
-        self.notify()        
+        self.notify()

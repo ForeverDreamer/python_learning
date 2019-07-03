@@ -11,7 +11,7 @@ def main():
     elif TYPE == 'vendors':
         for vend in VENDORS:
             print('Name: %s; Address: %s %s' %
-                  (vend.name, vend.street, vend.street))
+                  (vend.name, vend.number, vend.street))
     else:
         raise ValueError('Incorrect type: ' + TYPE)
 

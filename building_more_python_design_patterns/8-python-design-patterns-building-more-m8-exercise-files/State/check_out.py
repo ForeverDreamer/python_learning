@@ -1,5 +1,6 @@
 from abs_state import AbsState
 
+
 class AtCheckOut(AbsState):
 
     def add_item(self):
