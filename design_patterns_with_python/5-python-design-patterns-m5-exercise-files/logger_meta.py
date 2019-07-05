@@ -1,6 +1,7 @@
 import datetime
 from singleton_meta import Singleton
 
+
 class Logger(metaclass=Singleton):
     log_file = None
 
